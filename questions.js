@@ -1,42 +1,78 @@
 // This file stores all the quiz questions. You can easily add more chapters here!
-// Each chapter has a unique ID, a title, description, and an array of questions.
-
 export const quizData = {
     "chapter1": {
-        title: "Chapter 1: Network Architecture",
-        description: "Test your knowledge on basic network topologies, OSI model, and concepts.",
+        title: "Chapter 1: Network Architecture & OSI Model",
+        description: "Test your knowledge on basic network topologies, OSI model, and core concepts.",
         questions: [
-            {
-                question: "Which layer of the OSI model is responsible for logical addressing and routing?",
-                options: ["Data Link Layer", "Network Layer", "Transport Layer", "Presentation Layer"],
-                correctAnswer: 1 // Index of the correct option
-            },
-            {
-                question: "What topology connects all devices to a single central device, like a switch?",
-                options: ["Ring", "Mesh", "Star", "Bus"],
-                correctAnswer: 2
-            },
-            {
-                question: "Which port does HTTPS typically use?",
-                options: ["80", "443", "22", "53"],
-                correctAnswer: 1
-            }
+            { question: "Which layer of the OSI model is responsible for logical addressing and routing?", options: ["Data Link", "Network", "Transport", "Presentation"], correctAnswer: 1 },
+            { question: "At which OSI layer do switches and MAC addresses typically operate?", options: ["Layer 1", "Layer 2", "Layer 3", "Layer 4"], correctAnswer: 1 },
+            { question: "Which network topology connects all devices to a single central device?", options: ["Ring", "Mesh", "Star", "Bus"], correctAnswer: 2 },
+            { question: "What is the primary purpose of a DNS server?", options: ["Assign IPs", "Resolve domain names to IPs", "Filter traffic", "Encrypt traffic"], correctAnswer: 1 },
+            { question: "Which port does HTTPS typically use?", options: ["80", "443", "22", "53"], correctAnswer: 1 },
+            { question: "Which describes a Local Area Network (LAN)?", options: ["Country-wide", "Single building/campus", "Storage network", "Secure tunnel"], correctAnswer: 1 },
+            { question: "What is the function of a router in a network?", options: ["Connect local devices", "Forward packets between networks", "Provide Wi-Fi", "Block traffic"], correctAnswer: 1 },
+            { question: "Which OSI layer provides reliable data transfer using TCP?", options: ["Network", "Data Link", "Transport", "Application"], correctAnswer: 2 },
+            { question: "What topology offers the highest redundancy?", options: ["Bus", "Star", "Mesh", "Ring"], correctAnswer: 2 },
+            { question: "Which device operates at Layer 1 of the OSI model?", options: ["Switch", "Router", "Hub", "Firewall"], correctAnswer: 2 },
+            { question: "What port does HTTP use?", options: ["443", "80", "21", "25"], correctAnswer: 1 },
+            { question: "Which layer handles data formatting and encryption?", options: ["Application", "Presentation", "Session", "Transport"], correctAnswer: 1 },
+            { question: "A network that connects multiple LANs across a large region is a:", options: ["PAN", "WLAN", "WAN", "SAN"], correctAnswer: 2 },
+            { question: "What port is used for SSH?", options: ["21", "22", "23", "3389"], correctAnswer: 1 },
+            { question: "Which protocol is connectionless and operates at the Transport layer?", options: ["TCP", "UDP", "IP", "ICMP"], correctAnswer: 1 },
+            { question: "What is the length of an IPv4 address?", options: ["16 bits", "32 bits", "64 bits", "128 bits"], correctAnswer: 1 },
+            { question: "What is the length of an IPv6 address?", options: ["32 bits", "64 bits", "128 bits", "256 bits"], correctAnswer: 2 },
+            { question: "Which layer is responsible for establishing, maintaining, and terminating sessions?", options: ["Network", "Transport", "Session", "Application"], correctAnswer: 2 },
+            { question: "What type of cable uses light to transmit data?", options: ["Coaxial", "UTP", "STP", "Fiber Optic"], correctAnswer: 3 },
+            { question: "Which topology connects all nodes in a closed loop?", options: ["Star", "Mesh", "Ring", "Bus"], correctAnswer: 2 },
+            { question: "What does MTU stand for?", options: ["Maximum Transfer Unit", "Maximum Transmission Unit", "Minimum Transfer Unit", "Multiple Transmission Units"], correctAnswer: 1 },
+            { question: "Which layer provides the user interface to network services?", options: ["Presentation", "Session", "Application", "Data Link"], correctAnswer: 2 },
+            { question: "What protocol operates at Port 25?", options: ["FTP", "SSH", "SMTP", "DNS"], correctAnswer: 2 },
+            { question: "What does CSMA/CD stand for?", options: ["Carrier Sense Multiple Access / Collision Detection", "Carrier Signal Multiple Access / Collision Domain", "Central System Multiple Access / Collision Detection", "Carrier Sense Multiple Access / Collision Domain"], correctAnswer: 0 },
+            { question: "Which layer converts frames into bits?", options: ["Network", "Data Link", "Physical", "Transport"], correctAnswer: 2 },
+            { question: "What port does Telnet use?", options: ["21", "22", "23", "25"], correctAnswer: 2 },
+            { question: "A PAN (Personal Area Network) is most commonly associated with:", options: ["Fiber", "Bluetooth", "Ethernet", "Wi-Fi"], correctAnswer: 1 },
+            { question: "Which device divides collision domains?", options: ["Hub", "Repeater", "Switch", "Cable"], correctAnswer: 2 },
+            { question: "Which port is used by DNS?", options: ["22", "53", "80", "110"], correctAnswer: 1 },
+            { question: "Which layer attaches a MAC address to a packet?", options: ["Network", "Data Link", "Physical", "Transport"], correctAnswer: 1 },
+            { question: "Which technology uses 802.11 standards?", options: ["Ethernet", "Bluetooth", "Wi-Fi", "WiMAX"], correctAnswer: 2 },
+            { question: "What port does RDP (Remote Desktop) use?", options: ["3389", "1433", "8080", "443"], correctAnswer: 0 }
         ]
     },
     "chapter2": {
-        title: "Chapter 2: Network Operations",
-        description: "Questions covering routing, switching, and basic network operations.",
+        title: "Chapter 2: Network Protocols & Operations",
+        description: "Questions covering common networking protocols, IP addressing, and operations.",
         questions: [
-            {
-                question: "Which protocol is used to automatically assign IP addresses to devices?",
-                options: ["DNS", "DHCP", "ARP", "NTP"],
-                correctAnswer: 1
-            },
-            {
-                question: "What command is used to test reachability to a specific IP address?",
-                options: ["tracert", "ipconfig", "ping", "netstat"],
-                correctAnswer: 2
-            }
+            { question: "Which protocol automatically assigns IP addresses?", options: ["DNS", "DHCP", "ARP", "NTP"], correctAnswer: 1 },
+            { question: "What command tests basic network reachability?", options: ["tracert", "ipconfig", "ping", "netstat"], correctAnswer: 2 },
+            { question: "Which transport protocol is connection-oriented?", options: ["UDP", "TCP", "ICMP", "IP"], correctAnswer: 1 },
+            { question: "What is the purpose of ARP?", options: ["Translate IP to MAC", "Assign IPs", "Transfer files", "Sync clocks"], correctAnswer: 0 },
+            { question: "Which protocol provides secure file transfer?", options: ["TFTP", "FTP", "SFTP", "Telnet"], correctAnswer: 2 },
+            { question: "Which Class A IP range is reserved for loopback testing?", options: ["10.x.x.x", "127.x.x.x", "169.254.x.x", "192.168.x.x"], correctAnswer: 1 },
+            { question: "What is APIPA?", options: ["Automatic Private IP Addressing", "Advanced Protocol IP Allocation", "Automated Public IP Allocation", "Automatic Port IP Assignment"], correctAnswer: 0 },
+            { question: "Which protocol synchronizes network clocks?", options: ["NTP", "SNMP", "SMTP", "FTP"], correctAnswer: 0 },
+            { question: "What command shows the route packets take to a destination?", options: ["ping", "tracert / traceroute", "ipconfig", "nslookup"], correctAnswer: 1 },
+            { question: "Which protocol is used to monitor and manage network devices?", options: ["SMTP", "SNMP", "NTP", "SIP"], correctAnswer: 1 },
+            { question: "What is a default gateway?", options: ["A switch port", "The router interface leading out of the local network", "A firewall rule", "A DNS server IP"], correctAnswer: 1 },
+            { question: "What translates private IPs to public IPs?", options: ["DHCP", "DNS", "NAT", "ARP"], correctAnswer: 2 },
+            { question: "What command displays MAC addresses on a Windows PC?", options: ["ipconfig /all", "ping", "tracert", "netsh"], correctAnswer: 0 },
+            { question: "Which port does TFTP use?", options: ["21", "22", "69", "80"], correctAnswer: 2 },
+            { question: "What is a VLAN?", options: ["Virtual Local Area Network", "Variable Length Area Network", "Virtual Link Access Node", "Variable Local Area Network"], correctAnswer: 0 },
+            { question: "Which protocol is used for VoIP signaling?", options: ["SMTP", "SIP", "NTP", "FTP"], correctAnswer: 1 },
+            { question: "What does the subnet mask do?", options: ["Encrypts IP addresses", "Determines network and host portions of an IP", "Assigns MAC addresses", "Routes packets to the internet"], correctAnswer: 1 },
+            { question: "What port does POP3 use?", options: ["25", "110", "143", "443"], correctAnswer: 1 },
+            { question: "What port does IMAP use?", options: ["25", "110", "143", "443"], correctAnswer: 2 },
+            { question: "Which command queries DNS servers for troubleshooting?", options: ["ping", "ipconfig", "nslookup", "arp -a"], correctAnswer: 2 },
+            { question: "What is the IPv6 loopback address?", options: ["127.0.0.1", "::1", "FE80::", "FF00::"], correctAnswer: 1 },
+            { question: "What does a DHCP Discover packet do?", options: ["Finds a DNS server", "Searches for an available DHCP server", "Renews an IP lease", "Assigns a MAC address"], correctAnswer: 1 },
+            { question: "Which IP class uses a default subnet mask of 255.255.0.0?", options: ["Class A", "Class B", "Class C", "Class D"], correctAnswer: 1 },
+            { question: "What is the broadcast address for network 192.168.1.0/24?", options: ["192.168.1.1", "192.168.1.254", "192.168.1.255", "192.168.2.0"], correctAnswer: 2 },
+            { question: "What is the purpose of ICMP?", options: ["File transfer", "Error reporting and diagnostics (like ping)", "Domain resolution", "Encryption"], correctAnswer: 1 },
+            { question: "Which protocol uses UDP port 67 and 68?", options: ["DNS", "DHCP", "TFTP", "SNMP"], correctAnswer: 1 },
+            { question: "Which IP range is link-local (APIPA) in IPv4?", options: ["10.0.0.0/8", "172.16.0.0/12", "169.254.0.0/16", "192.168.0.0/16"], correctAnswer: 2 },
+            { question: "What does Spanning Tree Protocol (STP) prevent?", options: ["Broadcast storms / Switching loops", "DDoS attacks", "IP conflicts", "MAC spoofing"], correctAnswer: 0 },
+            { question: "Which command clears the DNS cache in Windows?", options: ["ipconfig /renew", "ipconfig /flushdns", "arp -d", "netstat -r"], correctAnswer: 1 },
+            { question: "What is the administrative distance of a directly connected route?", options: ["0", "1", "90", "120"], correctAnswer: 0 },
+            { question: "Which routing protocol uses hop count as its primary metric?", options: ["OSPF", "EIGRP", "RIP", "BGP"], correctAnswer: 2 }
         ]
     }
 };
