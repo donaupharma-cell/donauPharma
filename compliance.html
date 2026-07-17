@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance | Donau Pharmaceuticals</title>
+    <meta name="description"
+        content="Donau Pharmaceuticals meets FDA, EU-GMP, WHO and ICH standards. ZaZiBoNa registered for multi-country SADC market access.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .comp-hero {
+            position: relative;
+            height: 75vh;
+            min-height: 480px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .comp-hero img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .comp-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 20, 50, 0.9) 35%, rgba(0, 20, 50, 0.1) 100%);
+        }
+
+        .comp-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 60px;
+            color: white;
+            max-width: 720px;
+        }
+
+        .comp-hero-content .section-label {
+            color: var(--accent);
+        }
+
+        .comp-hero-content h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 12px 0 20px;
+            color: white;
+        }
+
+        .comp-hero-content p {
+            font-size: 1.05rem;
+            opacity: 0.85;
+            line-height: 1.75;
+            max-width: 560px;
+        }
+
+        .stat-strip {
+            background: var(--primary-dark);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .stat-strip-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 6px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .divider-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid #e0e8f0;
+        }
+
+        .divider-row:last-child {
+            border-bottom: none;
+        }
+
+        .divider-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .divider-value {
+            font-weight: 700;
+            color: var(--primary-dark);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Donau Pharmaceuticals"
+                    class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+                    <li><a href="compliance.html" class="nav-link active">Compliance</a></li>
+                    <li><a href="facility.html" class="nav-link">Facility</a></li>
+                    <li><a href="supply-chain.html" class="nav-link">Supply Chain</a></li>
+                </ul>
+            </nav>
+            <a href="careers.html" class="btn-primary">Careers</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="comp-hero">
+            <img src="assets/cleanroom-staff-gowning.png" alt="GMP Cleanroom Staff">
+            <div class="comp-hero-overlay"></div>
+            <div class="comp-hero-content">
+                <span class="section-label">Regulatory Assurance</span>
+                <h1>World-Class Quality. Built Into Every Process.</h1>
+                <p>Our facility operates to the highest international standards — designed in accordance with FDA,
+                    EU-GMP, WHO and ICH guidelines to ensure consistent, quality-assured pharmaceutical outputs every
+                    time.</p>
+            </div>
+        </section>
+
+        <!-- Stat Strip -->
+        <section class="stat-strip">
+            <div class="container">
+                <div class="stat-strip-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">EU-GMP</span>
+                        <span class="stat-label">Design Ready</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">ZaZiBoNa</span>
+                        <span class="stat-label">Registered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">SADC Member States</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">WHO</span>
+                        <span class="stat-label">Guidelines Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GMP Standards Section -->
+        <section style="padding: 80px 0; background: var(--white);">
+            <div class="container">
+                <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/cleanroom-staff-gowning.png"
+                            alt="Quality Assurance Personnel">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(transparent, rgba(0,30,60,0.85)); color: white;">
+                            <p style="margin: 0; font-size: 0.9rem; font-weight: 600;">EU-GMP Certified Cleanroom
+                                Environment</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="section-label">GMP Framework</span>
+                        <h2 style="font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin: 12px 0 16px;">
+                            Designed to International Regulatory Standards</h2>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.75; margin-bottom: 32px;">
+                            Every aspect of our facility — from cleanroom infrastructure to batch documentation — is
+                            built and operated to satisfy the expectations of international regulatory bodies and
+                            institutional pharmaceutical buyers.</p>
+                        <div>
+                            <div class="divider-row">
+                                <span class="divider-label">Design Standard</span>
+                                <span class="divider-value">EU-GMP Ready</span>
+                            </div>
+                            <div class="divider-row">
+                                <span class="divider-label">WHO Compliance</span>
+                                <span class="divider-value">Guideline Aligned</span>
+                            </div>
+                            <div class="divider-row">
+                                <span class="divider-label">ICH Guidelines</span>
+                                <span class="divider-value">Q1–Q11 Applicable</span>
+                            </div>
+                            <div class="divider-row">
+                                <span class="divider-label">FDA Alignment</span>
+                                <span class="divider-value">21 CFR Part 211</span>
+                            </div>
+                            <div class="divider-row">
+                                <span class="divider-label">Next Milestone</span>
+                                <span class="divider-value">EU-GMP Application Post-3 Batches</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ZaZiBoNa Section -->
+        <section style="padding: 80px 0; background: var(--primary-light);">
+            <div class="container">
+                <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+                    <div>
+                        <span class="section-label">Regional Registration</span>
+                        <h2 style="font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin: 12px 0 16px;">
+                            The ZaZiBoNa Advantage</h2>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.75; margin-bottom: 32px;">
+                            ZaZiBoNa is the Zambia, Zimbabwe, Botswana, and Namibia collaborative medicines registration
+                            initiative — providing a harmonised, materially faster and lower-cost route to multi-country
+                            market access across the SADC region through shared dossier assessments.</p>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.75;">Rather than filing
+                            separately in each country, a single dossier submission through ZaZiBoNa enables
+                            simultaneous review and approval across all four member states — a decisive advantage for
+                            international partners entering Southern Africa.</p>
+                    </div>
+                    <div>
+                        <div style="border-top: 1px solid #c8d8e8; padding-top: 28px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                Namibia</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">Medicines Control
+                                Council (MCC) — primary registration market for Donau Pharmaceuticals.</p>
+                        </div>
+                        <div style="border-top: 1px solid #c8d8e8; padding-top: 28px; margin-top: 20px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                Botswana</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">Accessible
+                                through BURS and the SADC work-sharing dossier assessment pathway.</p>
+                        </div>
+                        <div style="border-top: 1px solid #c8d8e8; padding-top: 28px; margin-top: 20px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                Zambia &amp; Zimbabwe</p>
+                            <p
+                                style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; border-bottom: 1px solid #c8d8e8; padding-bottom: 28px;">
+                                Joint regional dossier review through the ZaZiBoNa initiative reduces time-to-market to
+                                months, not years.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality System Summary -->
+        <section style="padding: 80px 0; background: var(--white);">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 56px;">
+                    <span class="section-label">Quality System</span>
+                    <h2>End-to-End Quality Assurance</h2>
+                    <p>From raw material receipt to batch release, every step is governed by a robust quality management
+                        system.</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid #e0e8f0;">
+                    <div style="padding: 40px 36px; border-right: 1px solid #e0e8f0;">
+                        <span class="section-label" style="font-size: 0.75rem;">Documentation</span>
+                        <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin: 12px 0 12px;">Batch Records
+                            &amp; SOPs</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">Comprehensive standard
+                            operating procedures and batch documentation maintained for every production run,
+                            audit-ready at all times.</p>
+                    </div>
+                    <div style="padding: 40px 36px; border-right: 1px solid #e0e8f0;">
+                        <span class="section-label" style="font-size: 0.75rem;">Serialisation</span>
+                        <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin: 12px 0 12px;">Track &amp;
+                            Trace Ready</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">GS1-compliant
+                            serialisation and aggregation capability ensures unit-level traceability from packaging to
+                            patient delivery.</p>
+                    </div>
+                    <div style="padding: 40px 36px;">
+                        <span class="section-label" style="font-size: 0.75rem;">Stability</span>
+                        <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin: 12px 0 12px;">Stability
+                            Programmes</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">ICH-aligned
+                            accelerated and long-term stability testing programmes available as part of technology
+                            transfer and dossier support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lab Science Visual -->
+        <section style="padding: 80px 0; background: var(--primary-light);">
+            <div class="container">
+                <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                    <div>
+                        <span class="section-label">Scientific Excellence</span>
+                        <h2 style="font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin: 12px 0 16px;">
+                            Precision at Every Stage</h2>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 20px;">
+                            Quality assurance at Donau Pharmaceuticals is not a final checkpoint — it is embedded into
+                            every step of the manufacturing process. From raw material sampling through to final
+                            release, our trained QA team applies rigorous analytical and microbiological controls.</p>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">Every batch is
+                            accompanied by a full dossier of test results, batch records and certificates of analysis —
+                            ready for regulatory review at any point in the supply chain.</p>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <img src="assets/lab-scientist-sampling.jpg"
+                            alt="Scientist Taking Sample for Quality Testing">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(transparent, rgba(0,30,60,0.85)); color: white;">
+                            <p style="margin: 0; font-size: 0.9rem; font-weight: 600;">In-Process Quality Sampling &amp;
+                                Analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Donau Pharmaceuticals"
+                            class="logo-img">
+                    </div>
+                    <p>A strategic asset for national health security. Proudly Namibian.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct Contact</h4>
+                    <ul class="footer-links">
+                        <li>Gerome Sabastiaan Prinzonsky</li>
+                        <li><a href="mailto:gprinzonsky@hotmail.com">gprinzonsky@hotmail.com</a></li>
+                        <li><a href="tel:+264856628082">+264 85 662 8082</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Facility</h4>
+                    <ul class="footer-links">
+                        <li>Windhoek, Namibia</li>
+                        <li>EU-GMP Compliant Layout</li>
+                        <li>Restricted Access Zone</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Tender Compliance</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Donau Pharmaceuticals. Authorized Government Contractor.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donau Pharmaceuticals | Strategic Healthcare Packaging for the Public Sector</title>
+    <meta name="description"
+        content="Donau Pharmaceuticals operates a world-class pharmaceutical blister packaging facility in Windhoek, Namibia — delivering reliable, scalable supply across Southern Africa.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .home-hero {
+            position: relative;
+            height: 92vh;
+            min-height: 560px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .home-hero img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .home-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(0, 20, 55, 0.92) 45%, rgba(0, 20, 55, 0.25) 100%);
+        }
+
+        .home-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 0 60px;
+            color: white;
+            max-width: 680px;
+        }
+
+        .home-hero-content .section-label {
+            color: var(--accent);
+        }
+
+        .home-hero-content h1 {
+            font-size: 3.4rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin: 14px 0 22px;
+            color: white;
+        }
+
+        .home-hero-content p {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            line-height: 1.75;
+            margin-bottom: 36px;
+        }
+
+        .stat-strip {
+            background: var(--primary-dark);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .stat-strip-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 6px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Donau Pharmaceuticals"
+                    class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+                    <li><a href="compliance.html" class="nav-link">Compliance</a></li>
+                    <li><a href="facility.html" class="nav-link">Facility</a></li>
+                    <li><a href="supply-chain.html" class="nav-link">Supply Chain</a></li>
+                </ul>
+            </nav>
+            <a href="careers.html" class="btn-primary">Careers</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Full-bleed Hero -->
+        <section class="home-hero">
+            <img src="assets/pharmaceutical-capsules-global.jpg"
+                alt="Pharmaceutical Packaging and Logistics">
+            <div class="home-hero-overlay"></div>
+            <div class="home-hero-content">
+                <span class="section-label">National Health Security Partner</span>
+                <h1>Strategic Pharmaceutical Packaging. Certified for Public Service.</h1>
+                <p>Donau Pharmaceuticals operates a world-class blister packaging facility in Windhoek, Namibia — built
+                    to EU-GMP standards and positioned to deliver reliable, scalable contract manufacturing across
+                    Southern Africa.</p>
+                <div class="hero-actions">
+                    <a href="capabilities.html" class="btn-primary">View Capabilities</a>
+                    <a href="#contact" class="btn-secondary"
+                        style="color: white; border-color: rgba(255,255,255,0.6);">Request Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stat Strip -->
+        <section class="stat-strip">
+            <div class="container">
+                <div class="stat-strip-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">1997</span>
+                        <span class="stat-label">Established</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">EU-GMP</span>
+                        <span class="stat-label">Design Standard</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">SADC</span>
+                        <span class="stat-label">Regional Reach</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Namibian Owned</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are -->
+        <section style="padding: 100px 0; background: var(--white);">
+            <div class="container">
+                <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+                    <div>
+                        <span class="section-label">Who We Are</span>
+                        <h2
+                            style="font-size: 2.2rem; font-weight: 800; color: var(--primary-dark); margin: 12px 0 20px;">
+                            Namibia's Premier Contract Pharmaceutical Manufacturer</h2>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 20px;">
+                            Donau Pharmaceuticals is a purpose-built pharmaceutical blister packaging and contract
+                            manufacturing company, established in Windhoek in 1997. We are a 100% Namibian-owned
+                            business serving public sector buyers, government tender programmes, and international
+                            pharmaceutical partners entering the Southern African market.</p>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">Our facility is designed
+                            and operated in accordance with FDA, EU-GMP, WHO and ICH guidelines — enabling us to deliver
+                            quality medicines reliably, at scale, with full serialisation and traceability.</p>
+                        <div class="hero-image-wrapper" style="margin-top: 36px;">
+                            <img src="assets/facility-production-floor.jpeg" alt="Donau Pharmaceuticals Production Facility">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(transparent, rgba(0,30,60,0.85)); color: white;">
+                                <p style="margin: 0; font-size: 0.9rem; font-weight: 600;">Purpose-Built Pharmaceutical
+                                    Manufacturing — Windhoek, Namibia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="border-top: 1px solid #e0e8f0; padding-top: 28px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">
+                                Integrity</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">Uncompromising
+                                ethics in every batch, every partnership, and every commitment we make.</p>
+                        </div>
+                        <div style="border-top: 1px solid #e0e8f0; padding-top: 28px; margin-top: 20px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">
+                                Innovation</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">German-engineered
+                                production systems and adaptive manufacturing models for evolving partner needs.</p>
+                        </div>
+                        <div style="border-top: 1px solid #e0e8f0; padding-top: 28px; margin-top: 20px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">
+                                Excellence</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">World-class
+                                standards at every stage — from cleanroom operations to final serialised packaging.</p>
+                        </div>
+                        <div
+                            style="border-top: 1px solid #e0e8f0; padding-top: 28px; margin-top: 20px; border-bottom: 1px solid #e0e8f0; padding-bottom: 28px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">
+                                Passion</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">Patient-first
+                                care that drives everything we do — delivering safe, affordable medicines to those who
+                                need them most.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Navigation Tiles -->
+        <section style="padding: 80px 0; background: var(--primary-light);">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 50px;">
+                    <span class="section-label">Explore</span>
+                    <h2>What We Offer</h2>
+                    <p>Discover the depth of our capabilities, compliance credentials, facility infrastructure, and
+                        supply chain reach.</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid #c8d8e8;">
+                    <a href="capabilities.html"
+                        style="display: block; padding: 36px 28px; border-right: 1px solid #c8d8e8; text-decoration: none; transition: background 0.2s;"
+                        onmouseover="this.style.background='white'" onmouseout="this.style.background='transparent'">
+                        <p
+                            style="font-size: 0.75rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+                            01</p>
+                        <h3 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 8px;">Capabilities</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">Molecule portfolio,
+                            blister lines, and partnership models for entry into Namibia.</p>
+                    </a>
+                    <a href="compliance.html"
+                        style="display: block; padding: 36px 28px; border-right: 1px solid #c8d8e8; text-decoration: none; transition: background 0.2s;"
+                        onmouseover="this.style.background='white'" onmouseout="this.style.background='transparent'">
+                        <p
+                            style="font-size: 0.75rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+                            02</p>
+                        <h3 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 8px;">Compliance</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">FDA, EU-GMP, WHO and
+                            ZaZiBoNa registration for SADC market access.</p>
+                    </a>
+                    <a href="facility.html"
+                        style="display: block; padding: 36px 28px; border-right: 1px solid #c8d8e8; text-decoration: none; transition: background 0.2s;"
+                        onmouseover="this.style.background='white'" onmouseout="this.style.background='transparent'">
+                        <p
+                            style="font-size: 0.75rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+                            03</p>
+                        <h3 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 8px;">Facility</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">German-engineered
+                            modular cleanrooms with Uhlmann, BMF, and Octanorm systems.</p>
+                    </a>
+                    <a href="supply-chain.html"
+                        style="display: block; padding: 36px 28px; text-decoration: none; transition: background 0.2s;"
+                        onmouseover="this.style.background='white'" onmouseout="this.style.background='transparent'">
+                        <p
+                            style="font-size: 0.75rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+                            04</p>
+                        <h3 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 8px;">Supply Chain</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">NAD 1.9bn public
+                            health budget access and local manufacturer procurement preference.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Inquiry Portal -->
+        <section id="contact"
+            style="background: linear-gradient(to bottom, var(--white) 50%, var(--primary-light) 50%); padding-bottom: 0;">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="section-header">
+                        <span class="section-label">Official Communication</span>
+                        <h2>Inquiry Portal</h2>
+                        <p>Secure channel for procurement officers, agency representatives, and international
+                            pharmaceutical partners.</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="name">Official Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Official Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="name@agency.gov.na"
+                                    required>
+                            </div>
+                            <div class="form-field">
+                                <label for="agency">Company Name</label>
+                                <input type="text" id="agency" class="form-control"
+                                    placeholder="Ministry of Health / CMS" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="clearance">Security Level</label>
+                                <select id="clearance" class="form-control">
+                                    <option>Unclassified / Public</option>
+                                    <option>Official Use Only</option>
+                                    <option>Confidential</option>
+                                </select>
+                            </div>
+                            <div class="form-field full-width">
+                                <label for="message">Procurement Requirements</label>
+                                <textarea id="message" class="form-control"
+                                    placeholder="Please detail tender reference numbers or specific manufacturing requirements..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary" style="margin-top: 30px; width: 100%;">Submit Official
+                            Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Donau Pharmaceuticals"
+                            class="logo-img">
+                    </div>
+                    <p>A strategic asset for national health security. Proudly Namibian.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct Contact</h4>
+                    <ul class="footer-links">
+                        <li>Gerome Sabastiaan Prinzonsky</li>
+                        <li><a href="mailto:gprinzonsky@hotmail.com">gprinzonsky@hotmail.com</a></li>
+                        <li><a href="tel:+264856628082">+264 85 662 8082</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Facility</h4>
+                    <ul class="footer-links">
+                        <li>Windhoek, Namibia</li>
+                        <li>EU-GMP Compliant Layout</li>
+                        <li>Restricted Access Zone</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Tender Compliance</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Donau Pharmaceuticals. Authorized Government Contractor.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility | Donau Pharmaceuticals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Page-level styles for Facility */
+        .facility-hero {
+            position: relative;
+            height: 80vh;
+            min-height: 520px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .facility-hero img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .facility-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 20, 50, 0.85) 30%, rgba(0, 20, 50, 0.1) 100%);
+        }
+
+        .facility-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 60px;
+            color: white;
+            max-width: 700px;
+        }
+
+        .facility-hero-content .section-label {
+            color: var(--accent);
+        }
+
+        .facility-hero-content h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 12px 0 20px;
+            color: white;
+        }
+
+        .facility-hero-content p {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 560px;
+            line-height: 1.7;
+        }
+
+        /* Stat strip */
+        .stat-strip {
+            background: var(--primary-dark);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .stat-strip-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.75;
+            margin-top: 6px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Interior section */
+        .facility-interior {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            align-items: stretch;
+        }
+
+        .facility-interior-image {
+            position: relative;
+            overflow: hidden;
+            min-height: 550px;
+        }
+
+        .facility-interior-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .facility-interior-image .img-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 28px;
+            background: linear-gradient(transparent, rgba(0, 20, 50, 0.85));
+            color: white;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .facility-interior-content {
+            background: var(--primary-light);
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .facility-interior-content h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+        }
+
+        .facility-interior-content p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.75;
+            margin-bottom: 36px;
+        }
+
+        .spec-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 18px;
+            background: white;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .spec-row-label {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .spec-row-value {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Donau Pharmaceuticals"
+                    class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+                    <li><a href="compliance.html" class="nav-link">Compliance</a></li>
+                    <li><a href="facility.html" class="nav-link active">Facility</a></li>
+                    <li><a href="supply-chain.html" class="nav-link">Supply Chain</a></li>
+                </ul>
+            </nav>
+            <a href="careers.html" class="btn-primary">Careers</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Full-bleed Exterior Hero -->
+        <section class="facility-hero">
+            <img src="assets/facility-exterior.png" alt="Donau Pharmaceuticals Exterior">
+            <div class="facility-hero-overlay"></div>
+            <div class="facility-hero-content">
+                <span class="section-label">Production Heritage Since 1997</span>
+                <h1>A Landmark of Pharmaceutical Excellence</h1>
+                <p>Our purpose-built facility in Windhoek, Namibia is designed to EU and WHO GMP standards — delivering
+                    reliable, scalable production for both public and private sector partners across Southern Africa.
+                </p>
+            </div>
+        </section>
+
+        <!-- Stat Strip -->
+        <section class="stat-strip">
+            <div class="container">
+                <div class="stat-strip-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">1997</span>
+                        <span class="stat-label">Year Established</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">EU-GMP</span>
+                        <span class="stat-label">Design Standard</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">German Equipment Suppliers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Namibian Owned</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interior Section -->
+        <section style="padding: 80px 0; background: var(--white);">
+            <div class="container">
+                <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                    <!-- Image as a contained card -->
+                    <div class="hero-image-wrapper">
+                        <img src="assets/facility-interior.png" alt="Donau Pharmaceuticals Interior Cleanrooms">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(transparent, rgba(0,30,60,0.8)); color: white;">
+                            <p style="margin: 0; font-size: 0.9rem; font-weight: 600;">Octanorm Modular Cleanrooms —
+                                Windhoek, Namibia</p>
+                        </div>
+                    </div>
+
+                    <!-- Plain text, no card background -->
+                    <div>
+                        <span class="section-label">German-Engineered Precision</span>
+                        <h2 style="font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin: 12px 0 16px;">
+                            World-Class Infrastructure, Built for GMP</h2>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.75; margin-bottom: 36px;">
+                            Equipped with validated production lines from leading German suppliers, our facility is
+                            configured for both solid oral dose production and blister packaging — meeting the
+                            expectations of international partners and regulatory authorities.</p>
+
+                        <div style="margin-top: 8px;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #e0e8f0;">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Cleanroom
+                                    Supplier</span>
+                                <span style="font-weight: 700; color: var(--primary-dark); font-size: 0.95rem;">Octanorm
+                                    Modular Systems</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #e0e8f0;">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Packaging
+                                    Equipment</span>
+                                <span style="font-weight: 700; color: var(--primary-dark); font-size: 0.95rem;">Uhlmann
+                                    Blister Lines</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #e0e8f0;">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Production
+                                    Systems</span>
+                                <span style="font-weight: 700; color: var(--primary-dark); font-size: 0.95rem;">BMF
+                                    Machinery</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #e0e8f0;">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Regulatory
+                                    Alignment</span>
+                                <span style="font-weight: 700; color: var(--primary-dark); font-size: 0.95rem;">FDA ·
+                                    EU-GMP · WHO · ICH</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0;">
+                                <span
+                                    style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Next
+                                    Milestone</span>
+                                <span style="font-weight: 700; color: var(--primary-dark); font-size: 0.95rem;">EU-GMP
+                                    Application Post-3 Batches</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- People & Technology Section -->
+        <section style="padding: 80px 0; background: var(--primary-light);">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 50px;">
+                    <span class="section-label">People &amp; Technology</span>
+                    <h2>Where Precision Meets Purpose</h2>
+                    <p>Our facility combines cutting-edge technology with a highly trained team committed to quality at
+                        every step of the production process.</p>
+                </div>
+                <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/surgeon-operating-room.jpg"
+                            alt="Advanced Image-Guided Technology">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(transparent, rgba(0,30,60,0.85)); color: white;">
+                            <p style="margin: 0; font-size: 0.9rem; font-weight: 600;">Advanced Clinical-Grade
+                                Technology</p>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <img src="assets/cleanroom-worker-equipment.jpg"
+                            alt="Cleanroom Production Staff">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(transparent, rgba(0,30,60,0.85)); color: white;">
+                            <p style="margin: 0; font-size: 0.9rem; font-weight: 600;">Controlled Cleanroom Operations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="bg-light" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Our Purpose</span>
+                    <h2>Vision &amp; Mission</h2>
+                    <p>Rooted in Namibia. Built for Africa.</p>
+                </div>
+
+                <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+                    <!-- Vision -->
+                    <div>
+                        <span class="section-label" style="font-size: 0.8rem;">Vision</span>
+                        <h3 style="font-size: 1.5rem; color: var(--primary-dark); margin: 10px 0 16px;">A Healthier
+                            Africa</h3>
+                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 1rem; margin-bottom: 40px;">
+                            A healthier Africa built on local capability, trusted medicines and inclusive care.</p>
+
+                        <div style="border-top: 1px solid #e0e8f0; padding-top: 30px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                Affordable Healthcare</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">World-class
+                                quality at accessible price points for Africa's public health system.</p>
+                        </div>
+                        <div style="border-top: 1px solid #e0e8f0; padding-top: 30px; margin-top: 24px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                100% Local Ownership</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">Proudly Namibian
+                                — empowering local talent and industry growth across the region.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mission -->
+                    <div>
+                        <span class="section-label" style="font-size: 0.8rem;">Mission</span>
+                        <h3 style="font-size: 1.5rem; color: var(--primary-dark); margin: 10px 0 16px;">Resilient
+                            Healthcare Systems</h3>
+                        <p style="color: var(--text-muted); line-height: 1.8; font-size: 1rem; margin-bottom: 40px;">
+                            Through ethical manufacturing, scientific excellence and community partnerships — delivering
+                            safe, affordable medicines and empowering sustainable health for all.</p>
+
+                        <div style="border-top: 1px solid #e0e8f0; padding-top: 30px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                Import Substitution</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">Reducing reliance
+                                on imported medicines through scalable, quality local manufacture.</p>
+                        </div>
+                        <div style="border-top: 1px solid #e0e8f0; padding-top: 30px; margin-top: 24px;">
+                            <p
+                                style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                Regional Reach</p>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">Positioned for
+                                SADC-wide supply through ZaZiBoNa harmonised registration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Donau Pharmaceuticals"
+                            class="logo-img">
+                    </div>
+                    <p>A strategic asset for national health security. Proudly Namibian.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct Contact</h4>
+                    <ul class="footer-links">
+                        <li>Gerome Sabastiaan Prinzonsky</li>
+                        <li><a href="mailto:gprinzonsky@hotmail.com">gprinzonsky@hotmail.com</a></li>
+                        <li><a href="tel:+264856628082">+264 85 662 8082</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Facility</h4>
+                    <ul class="footer-links">
+                        <li>Windhoek, Namibia</li>
+                        <li>EU-GMP Compliant Layout</li>
+                        <li>Restricted Access Zone</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Tender Compliance</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Donau Pharmaceuticals. Authorized Government Contractor.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
